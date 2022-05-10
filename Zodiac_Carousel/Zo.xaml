@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zodiac_Carousel.Zo"
+             >
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="SaddleBrown" >
+            <StackLayout>
+                <Image x:Name="img">
+                </Image>
+                <Editor x:Name="en" TextColor="RosyBrown" Margin="15" AutoSize="TextChanges" IsReadOnly="True"></Editor>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

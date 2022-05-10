@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\_0.jpg" />
+    <None Remove="Resources\_1.jpg" />
+    <None Remove="Resources\_10.jpg" />
+    <None Remove="Resources\_11.jpg" />
+    <None Remove="Resources\_2.jpg" />
+    <None Remove="Resources\_3.jpg" />
+    <None Remove="Resources\_4.jpg" />
+    <None Remove="Resources\_5.jpg" />
+    <None Remove="Resources\_6.jpg" />
+    <None Remove="Resources\_7.jpg" />
+    <None Remove="Resources\_8.jpg" />
+    <None Remove="Resources\_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\_0.jpg" />
+    <EmbeddedResource Include="Resources\_1.jpg" />
+    <EmbeddedResource Include="Resources\_10.jpg" />
+    <EmbeddedResource Include="Resources\_11.jpg" />
+    <EmbeddedResource Include="Resources\_2.jpg" />
+    <EmbeddedResource Include="Resources\_3.jpg" />
+    <EmbeddedResource Include="Resources\_4.jpg" />
+    <EmbeddedResource Include="Resources\_5.jpg" />
+    <EmbeddedResource Include="Resources\_6.jpg" />
+    <EmbeddedResource Include="Resources\_7.jpg" />
+    <EmbeddedResource Include="Resources\_8.jpg" />
+    <EmbeddedResource Include="Resources\_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Zo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
