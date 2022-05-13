@@ -8,7 +8,8 @@
             <StackLayout>
                 <Image x:Name="img">
                 </Image>
-                <Editor x:Name="en" TextColor="RosyBrown" Margin="15" AutoSize="TextChanges" IsReadOnly="True"></Editor>
+                <Editor x:Name="en" TextColor="BlanchedAlmond" Margin="15" AutoSize="TextChanges" IsReadOnly="True"></Editor>
+                <Button BackgroundColor="SaddleBrown" BorderWidth="0" Clicked="MoreText" Text="More" TextColor="BlanchedAlmond" FontAttributes="Bold" HorizontalOptions="Center"></Button>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
